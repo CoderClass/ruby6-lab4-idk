@@ -1,0 +1,14 @@
+<div class="messages">
+	<ul class="list-group">
+		<% @messages.each do |msg| %>
+			<li class="list-group-item">
+				<span class=""><%= msg.username %>:</span>
+				<%= msg.content %>
+			</li>
+			
+		<% end %>
+	</ul>
+	
+</div>
+
+<%= render "messages/form" %>
