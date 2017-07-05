@@ -5,3 +5,11 @@
     <%= f.submit class: "btn btn-primary" %>
   <% end %>
 </div>
+
+
+<%= simple_form_for [@room, @message] do |f| %>
+  <%= f.input  :username %>
+  <%= f.input :content %>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
