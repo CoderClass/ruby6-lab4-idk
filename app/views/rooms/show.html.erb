@@ -1,0 +1,16 @@
+<%= @room.name %>
+
+<div class="messages">
+	<ul class="list-group">
+		<% @room.messages.each do |msg| %>
+			<li class="list-group-item">
+				<span class=""><%= msg.username %>:</span>
+				<%= msg.content %>
+			</li>
+			
+		<% end %>
+	</ul>
+	
+</div>
+
+<%= render "messages/form" %>
